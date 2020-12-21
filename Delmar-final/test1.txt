@@ -1,0 +1,837 @@
+<div>
+                                    <script type="text/javascript">
+                                        function ShowHideDiv1() {
+                                            var chkYes1 = document.getElementById("chkYes1");
+                                            var dvPassport1 = document.getElementById("dvPassport1");
+                                            dvPassport1.style.display = chkYes1.checked ? "block" : "none";
+                                        }
+                                    </script>
+                                    <span>Are you, or could you be pregnant?</span>
+                                    <label for="chkYes1">
+                                        <input type="radio" id="chkYes1" name="chkPassPort" onclick="ShowHideDiv1()" />
+                                        Yes
+                                    </label>
+                                    <label for="chkNo1">
+                                        <input type="radio" id="chkNo" name="chkPassPort" onclick="ShowHideDiv1()" />
+                                        No
+                                    </label>
+
+                                    <div id="dvPassport1" style="display: none;padding: 25px;" class="box-style1">
+                                        Please provide details.
+                                        <input type="text" id="txtPassportNumber" style="height: 50px;width: 30%;" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <script type="text/javascript">
+                                        function ShowHideDiv2() {
+                                            var chkYes2 = document.getElementById("chkYes2");
+                                            var dvPassport2 = document.getElementById("dvPassport2");
+                                            dvPassport2.style.display = chkYes2.checked ? "block" : "none";
+                                        }
+                                    </script>
+                                    <span>Are you diabetic?</span>
+                                    <label for="chkYes2">
+                                        <input type="radio" id="chkYes2" name="chkPassPort" onclick="ShowHideDiv2()" />
+                                        Yes
+                                    </label>
+                                    <label for="chkNo2">
+                                        <input type="radio" id="chkNo" name="chkPassPort" onclick="ShowHideDiv2()" />
+                                        No
+                                    </label>
+
+                                    <div id="dvPassport2" style="display: none;padding: 25px;" class="box-style1">
+                                        Please provide details of when you were diagnosed and what treatment you are on.
+                                        <input type="text" id="txtPassportNumber" style="height: 50px;width: 30%;" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <script type="text/javascript">
+                                        function ShowHideDiv3() {
+                                            var chkYes3 = document.getElementById("chkYes3");
+                                            var dvPassport3 = document.getElementById("dvPassport3");
+                                            dvPassport3.style.display = chkYes3.checked ? "block" : "none";
+                                        }
+                                    </script>
+                                    <span>Do you suffer from high blood pressure?</span>
+                                    <label for="chkYes3">
+                                        <input type="radio" id="chkYes3" name="chkPassPort" onclick="ShowHideDiv3()" />
+                                        Yes
+                                    </label>
+                                    <label for="chkNo3">
+                                        <input type="radio" id="chkNo" name="chkPassPort" onclick="ShowHideDiv3()" />
+                                        No
+                                    </label>
+
+                                    <div id="dvPassport3" style="display: none;padding: 25px;" class="box-style1">
+                                        Please provide details of when you were diagnosed and what treatment you are on.
+                                        <input type="text" id="txtPassportNumber" style="height: 50px;width: 30%;" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <script type="text/javascript">
+                                        function ShowHideDiv4() {
+                                            var chkYes4 = document.getElementById("chkYes4");
+                                            var dvPassport4 = document.getElementById("dvPassport4");
+                                            dvPassport3.style.display = chkYes4.checked ? "block" : "none";
+                                        }
+                                    </script>
+                                    <span>Do you suffer from heart problems or chest pain/angina?</span>
+                                    <label for="chkYes4">
+                                        <input type="radio" id="chkYes4" name="chkPassPort" onclick="ShowHideDiv4()" />
+                                        Yes
+                                    </label>
+                                    <label for="chkNo4">
+                                        <input type="radio" id="chkNo" name="chkPassPort" onclick="ShowHideDiv4()" />
+                                        No
+                                    </label>
+
+                                    <div id="dvPassport4" style="display: none;padding: 25px;" class="box-style1">
+                                        Please provide details. <input type="text" id="txtPassportNumber"
+                                            style="height: 50px;width: 30%;" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <script type="text/javascript">
+                                        function ShowHideDiv5() {
+                                            var chkYes5 = document.getElementById("chkYes5");
+                                            var dvPassport5 = document.getElementById("dvPassport5");
+                                            dvPassport5.style.display = chkYes5.checked ? "block" : "none";
+                                        }
+                                    </script>
+                                    <span>Do you have a pacemaker?</span>
+                                    <label for="chkYes5">
+                                        <input type="radio" id="chkYes5" name="chkPassPort" onclick="ShowHideDiv5()" />
+                                        Yes
+                                    </label>
+                                    <label for="chkNo5">
+                                        <input type="radio" id="chkNo" name="chkPassPort" onclick="ShowHideDiv5()" />
+                                        No
+                                    </label>
+
+                                    <div id="dvPassport5" style="display: none;padding: 25px;" class="box-style1">
+                                        Please provide the make, model and the date when last it was checked.
+                                        <input type="text" id="txtPassportNumber" style="height: 50px;width: 30%;" />
+                                    </div>
+                                    <div>
+                                        <script type="text/javascript">
+                                            function ShowHideDiv6() {
+                                                var chkYes6 = document.getElementById("chkYes6");
+                                                var dvPassport6 = document.getElementById("dvPassport6");
+                                                dvPassport6.style.display = chkYes6.checked ? "block" : "none";
+                                            }
+                                        </script>
+                                        <span>Do you suffer from arthritis?</span>
+                                        <label for="chkYes6">
+                                            <input type="radio" id="chkYes6" name="chkPassPort"
+                                                onclick="ShowHideDiv6()" />
+                                            Yes
+                                        </label>
+                                        <label for="chkNo6">
+                                            <input type="radio" id="chkNo" name="chkPassPort"
+                                                onclick="ShowHideDiv6()" />
+                                            No
+                                        </label>
+
+                                        <div id="dvPassport6" style="display: none;padding: 25px;" class="box-style1">
+                                            Please provide details. <input type="text" id="txtPassportNumber"
+                                                style="height: 50px;width: 30%;" />
+                                        </div>
+                                        <div>
+                                            <script type="text/javascript">
+                                                function ShowHideDiv7() {
+                                                    var chkYes7 = document.getElementById("chkYes7");
+                                                    var dvPassport7 = document.getElementById("dvPassport7");
+                                                    dvPassport7.style.display = chkYes7.checked ? "block" : "none";
+                                                }
+                                            </script>
+                                            <span>Do have asthma, emphysema, bronchitis or hay fever?</span>
+                                            <label for="chkYes7">
+                                                <input type="radio" id="chkYes7" name="chkPassPort"
+                                                    onclick="ShowHideDiv7()" />
+                                                Yes
+                                            </label>
+                                            <label for="chkNo7">
+                                                <input type="radio" id="chkNo" name="chkPassPort"
+                                                    onclick="ShowHideDiv7()" />
+                                                No
+                                            </label>
+
+                                            <div id="dvPassport7" style="display: none;padding: 25px;"
+                                                class="box-style1">
+                                                Please provide details. <input type="text" id="txtPassportNumber"
+                                                    style="height: 50px;width: 30%;" />
+                                            </div>
+                                            <div>
+                                                <script type="text/javascript">
+                                                    function ShowHideDiv8() {
+                                                        var chkYes8 = document.getElementById("chkYes8");
+                                                        var dvPassport8 = document.getElementById("dvPassport8");
+                                                        dvPassport8.style.display = chkYes8.checked ? "block" : "none";
+                                                    }
+                                                </script>
+                                                <span>Have you recently had a cold or flu?</span>
+                                                <label for="chkYes8">
+                                                    <input type="radio" id="chkYes8" name="chkPassPort"
+                                                        onclick="ShowHideDiv8()" />
+                                                    Yes
+                                                </label>
+                                                <label for="chkNo8">
+                                                    <input type="radio" id="chkNo" name="chkPassPort"
+                                                        onclick="ShowHideDiv8()" />
+                                                    No
+                                                </label>
+
+                                                <div id="dvPassport8" style="display: none;padding: 25px;"
+                                                    class="box-style1">
+                                                    Please provide details. <input type="text" id="txtPassportNumber"
+                                                        style="height: 50px;width: 30%;" />
+                                                </div>
+                                                <div>
+                                                    <script type="text/javascript">
+                                                        function ShowHideDiv9() {
+                                                            var chkYes9 = document.getElementById("chkYes9");
+                                                            var dvPassport9 = document.getElementById("dvPassport9");
+                                                            dvPassport9.style.display = chkYes9.checked ? "block" : "none";
+                                                        }
+                                                    </script>
+                                                    <span>Do you suffer from sleep apnoea?</span>
+                                                    <label for="chkYes9">
+                                                        <input type="radio" id="chkYes9" name="chkPassPort"
+                                                            onclick="ShowHideDiv9()" />
+                                                        Yes
+                                                    </label>
+                                                    <label for="chkNo9">
+                                                        <input type="radio" id="chkNo" name="chkPassPort"
+                                                            onclick="ShowHideDiv9()" />
+                                                        No
+                                                    </label>
+
+                                                    <div id="dvPassport9" style="display: none;padding: 25px;"
+                                                        class="box-style1">
+                                                        Please provide details. <input type="text"
+                                                            id="txtPassportNumber" style="height: 50px;width: 30%;" />
+                                                    </div>
+
+                                                    <div>
+                                                        <script type="text/javascript">
+                                                            function ShowHideDiv10() {
+                                                                var chkYes10 = document.getElementById("chkYes10");
+                                                                var dvPassport10 = document.getElementById("dvPassport10");
+                                                                dvPassport10.style.display = chkYes10.checked ? "block" : "none";
+                                                            }
+                                                        </script>
+                                                        <span>Do you use a CPAP machine at home?</span>
+                                                        <label for="chkYes10">
+                                                            <input type="radio" id="chkYes10" name="chkPassPort"
+                                                                onclick="ShowHideDiv10()" />
+                                                            Yes
+                                                        </label>
+                                                        <label for="chkNo10">
+                                                            <input type="radio" id="chkNo" name="chkPassPort"
+                                                                onclick="ShowHideDiv10()" />
+                                                            No
+                                                        </label>
+
+                                                        <div id="dvPassport10" style="display: none;padding: 25px;"
+                                                            class="box-style1">
+                                                            Please provide details and bring your CPAP machine to
+                                                            hospital with you.
+                                                            <input type="text" id="txtPassportNumber"
+                                                                style="height: 50px;width: 30%;" />
+                                                        </div>
+
+                                                        <div>
+                                                            <script type="text/javascript">
+                                                                function ShowHideDiv11() {
+                                                                    var chkYes11 = document.getElementById("chkYes11");
+                                                                    var dvPassport11 = document.getElementById("dvPassport11");
+                                                                    dvPassport11.style.display = chkYes11.checked ? "block" : "none";
+                                                                }
+                                                            </script>
+                                                            <span>Do you have any liver disease?</span>
+                                                            <label for="chkYes11">
+                                                                <input type="radio" id="chkYes11" name="chkPassPort"
+                                                                    onclick="ShowHideDiv11()" />
+                                                                Yes
+                                                            </label>
+                                                            <label for="chkNo11">
+                                                                <input type="radio" id="chkNo" name="chkPassPort"
+                                                                    onclick="ShowHideDiv11()" />
+                                                                No
+                                                            </label>
+
+                                                            <div id="dvPassport11" style="display: none;padding: 25px;"
+                                                                class="box-style1">
+                                                                Please provide details and specify any hepatitis as A, B
+                                                                or C. <input type="text" id="txtPassportNumber"
+                                                                    style="height: 50px;width: 30%;" />
+                                                            </div>
+                                                            <div>
+                                                                <script type="text/javascript">
+                                                                    function ShowHideDiv12() {
+                                                                        var chkYes12 = document.getElementById("chkYes12");
+                                                                        var dvPassport12 = document.getElementById("dvPassport12");
+                                                                        dvPassport12.style.display = chkYes12.checked ? "block" : "none";
+                                                                    }
+                                                                </script>
+                                                                <span>Do you have any kidney disease?
+                                                                </span>
+                                                                <label for="chkYes12">
+                                                                    <input type="radio" id="chkYes12" name="chkPassPort"
+                                                                        onclick="ShowHideDiv12()" />
+                                                                    Yes
+                                                                </label>
+                                                                <label for="chkNo12">
+                                                                    <input type="radio" id="chkNo" name="chkPassPort"
+                                                                        onclick="ShowHideDiv12()" />
+                                                                    No
+                                                                </label>
+
+                                                                <div id="dvPassport12"
+                                                                    style="display: none;padding: 25px;"
+                                                                    class="box-style1">
+                                                                    Please provide details.
+                                                                    <input type="text" id="txtPassportNumber"
+                                                                        style="height: 50px;width: 30%;" />
+                                                                </div>
+                                                                <div>
+                                                                    <script type="text/javascript">
+                                                                        function ShowHideDiv13() {
+                                                                            var chkYes13 = document.getElementById("chkYes13");
+                                                                            var dvPassport13 = document.getElementById("dvPassport13");
+                                                                            dvPassport13.style.display = chkYes13.checked ? "block" : "none";
+                                                                        }
+                                                                    </script>
+                                                                    <span>Do you have any stomach/bowel diseases such as
+                                                                        hiatus hernia, ulcers,
+                                                                        divertilulosis or inflammatory bowel disease?
+                                                                    </span>
+                                                                    <label for="chkYes13">
+                                                                        <input type="radio" id="chkYes13"
+                                                                            name="chkPassPort"
+                                                                            onclick="ShowHideDiv13()" />
+                                                                        Yes
+                                                                    </label>
+                                                                    <label for="chkNo13">
+                                                                        <input type="radio" id="chkNo"
+                                                                            name="chkPassPort"
+                                                                            onclick="ShowHideDiv13()" />
+                                                                        No
+                                                                    </label>
+
+                                                                    <div id="dvPassport13"
+                                                                        style="display: none;padding: 25px;"
+                                                                        class="box-style1">
+                                                                        Please provide details.
+                                                                        <input type="text" id="txtPassportNumber"
+                                                                            style="height: 50px;width: 30%;" />
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <script type="text/javascript">
+                                                                            function ShowHideDiv14() {
+                                                                                var chkYes14 = document.getElementById("chkYes14");
+                                                                                var dvPassport14 = document.getElementById("dvPassport14");
+                                                                                dvPassport14.style.display = chkYes14.checked ? "block" : "none";
+                                                                            }
+                                                                        </script>
+                                                                        <span>Do you have any thyroid problems?
+
+                                                                        </span>
+                                                                        <label for="chkYes14">
+                                                                            <input type="radio" id="chkYes14"
+                                                                                name="chkPassPort"
+                                                                                onclick="ShowHideDiv14()" />
+                                                                            Yes
+                                                                        </label>
+                                                                        <label for="chkNo14">
+                                                                            <input type="radio" id="chkNo"
+                                                                                name="chkPassPort"
+                                                                                onclick="ShowHideDiv14()" />
+                                                                            No
+                                                                        </label>
+
+                                                                        <div id="dvPassport15"
+                                                                            style="display: none;padding: 25px;"
+                                                                            class="box-style1">
+                                                                            Please provide details.
+                                                                            <input type="text" id="txtPassportNumber"
+                                                                                style="height: 50px;width: 30%;" />
+                                                                        </div>
+                                                                        <div>
+                                                                            <script type="text/javascript">
+                                                                                function ShowHideDiv15() {
+                                                                                    var chkYes15 = document.getElementById("chkYes15");
+                                                                                    var dvPassport15 = document.getElementById("dvPassport15");
+                                                                                    dvPassport15.style.display = chkYes15.checked ? "block" : "none";
+                                                                                }
+                                                                            </script>
+                                                                            <span>Do you suffer from high blood
+                                                                                pressure?</span>
+                                                                            <label for="chkYes15">
+                                                                                <input type="radio" id="chkYes15"
+                                                                                    name="chkPassPort"
+                                                                                    onclick="ShowHideDiv15()" />
+                                                                                Yes
+                                                                            </label>
+                                                                            <label for="chkNo15">
+                                                                                <input type="radio" id="chkNo"
+                                                                                    name="chkPassPort"
+                                                                                    onclick="ShowHideDiv15()" />
+                                                                                No
+                                                                            </label>
+                                                                        </div>  
+
+                                                                            <div id="dvPassport3"
+                                                                                style="display: none;padding: 25px;"
+                                                                                class="box-style1">
+                                                                                Please provide details of when you were
+                                                                                diagnosed and what treatment you are on.
+                                                                                <input type="text"
+                                                                                    id="txtPassportNumber"
+                                                                                    style="height: 50px;width: 30%;" />
+                                                                            </div>
+                                                                            <div>
+                                                                                <script type="text/javascript">
+                                                                                    function ShowHideDiv3() {
+                                                                                        var chkYes3 = document.getElementById("chkYes3");
+                                                                                        var dvPassport3 = document.getElementById("dvPassport3");
+                                                                                        dvPassport3.style.display = chkYes3.checked ? "block" : "none";
+                                                                                    }
+                                                                                </script>
+                                                                                <span>Do you suffer from high blood
+                                                                                    pressure?</span>
+                                                                                <label for="chkYes3">
+                                                                                    <input type="radio" id="chkYes3"
+                                                                                        name="chkPassPort"
+                                                                                        onclick="ShowHideDiv3()" />
+                                                                                    Yes
+                                                                                </label>
+                                                                                <label for="chkNo3">
+                                                                                    <input type="radio" id="chkNo"
+                                                                                        name="chkPassPort"
+                                                                                        onclick="ShowHideDiv3()" />
+                                                                                    No
+                                                                                </label>
+
+                                                                                <div id="dvPassport3"
+                                                                                    style="display: none;padding: 25px;"
+                                                                                    class="box-style1">
+                                                                                    Please provide details of when you
+                                                                                    were diagnosed and what treatment
+                                                                                    you are on.
+                                                                                    <input type="text"
+                                                                                        id="txtPassportNumber"
+                                                                                        style="height: 50px;width: 30%;" />
+                                                                                </div>
+                                                                                <div>
+                                                                                    <script type="text/javascript">
+                                                                                        function ShowHideDiv3() {
+                                                                                            var chkYes3 = document.getElementById("chkYes3");
+                                                                                            var dvPassport3 = document.getElementById("dvPassport3");
+                                                                                            dvPassport3.style.display = chkYes3.checked ? "block" : "none";
+                                                                                        }
+                                                                                    </script>
+                                                                                    <span>Do you suffer from high blood
+                                                                                        pressure?</span>
+                                                                                    <label for="chkYes3">
+                                                                                        <input type="radio" id="chkYes3"
+                                                                                            name="chkPassPort"
+                                                                                            onclick="ShowHideDiv3()" />
+                                                                                        Yes
+                                                                                    </label>
+                                                                                    <label for="chkNo3">
+                                                                                        <input type="radio" id="chkNo"
+                                                                                            name="chkPassPort"
+                                                                                            onclick="ShowHideDiv3()" />
+                                                                                        No
+                                                                                    </label>
+
+                                                                                    <div id="dvPassport3"
+                                                                                        style="display: none;padding: 25px;"
+                                                                                        class="box-style1">
+                                                                                        Please provide details of when
+                                                                                        you were diagnosed and what
+                                                                                        treatment you are on.
+                                                                                        <input type="text"
+                                                                                            id="txtPassportNumber"
+                                                                                            style="height: 50px;width: 30%;" />
+                                                                                    </div>
+                                                                                    <div>
+                                                                                        <script type="text/javascript">
+                                                                                            function ShowHideDiv3() {
+                                                                                                var chkYes3 = document.getElementById("chkYes3");
+                                                                                                var dvPassport3 = document.getElementById("dvPassport3");
+                                                                                                dvPassport3.style.display = chkYes3.checked ? "block" : "none";
+                                                                                            }
+                                                                                        </script>
+                                                                                        <span>Do you suffer from high
+                                                                                            blood pressure?</span>
+                                                                                        <label for="chkYes3">
+                                                                                            <input type="radio"
+                                                                                                id="chkYes3"
+                                                                                                name="chkPassPort"
+                                                                                                onclick="ShowHideDiv3()" />
+                                                                                            Yes
+                                                                                        </label>
+                                                                                        <label for="chkNo3">
+                                                                                            <input type="radio"
+                                                                                                id="chkNo"
+                                                                                                name="chkPassPort"
+                                                                                                onclick="ShowHideDiv3()" />
+                                                                                            No
+                                                                                        </label>
+
+                                                                                        <div id="dvPassport3"
+                                                                                            style="display: none;padding: 25px;"
+                                                                                            class="box-style1">
+                                                                                            Please provide details of
+                                                                                            when you were diagnosed and
+                                                                                            what treatment you are on.
+                                                                                            <input type="text"
+                                                                                                id="txtPassportNumber"
+                                                                                                style="height: 50px;width: 30%;" />
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <script
+                                                                                                type="text/javascript">
+                                                                                                    function ShowHideDiv3() {
+                                                                                                        var chkYes3 = document.getElementById("chkYes3");
+                                                                                                        var dvPassport3 = document.getElementById("dvPassport3");
+                                                                                                        dvPassport3.style.display = chkYes3.checked ? "block" : "none";
+                                                                                                    }
+                                                                                                </script>
+                                                                                            <span>Do you suffer from
+                                                                                                high blood
+                                                                                                pressure?</span>
+                                                                                            <label for="chkYes3">
+                                                                                                <input type="radio"
+                                                                                                    id="chkYes3"
+                                                                                                    name="chkPassPort"
+                                                                                                    onclick="ShowHideDiv3()" />
+                                                                                                Yes
+                                                                                            </label>
+                                                                                            <label for="chkNo3">
+                                                                                                <input type="radio"
+                                                                                                    id="chkNo"
+                                                                                                    name="chkPassPort"
+                                                                                                    onclick="ShowHideDiv3()" />
+                                                                                                No
+                                                                                            </label>
+
+                                                                                            <div id="dvPassport3"
+                                                                                                style="display: none;padding: 25px;"
+                                                                                                class="box-style1">
+                                                                                                Please provide details
+                                                                                                of when you were
+                                                                                                diagnosed and what
+                                                                                                treatment you are on.
+                                                                                                <input type="text"
+                                                                                                    id="txtPassportNumber"
+                                                                                                    style="height: 50px;width: 30%;" />
+                                                                                            </div>
+                                                                                            <div>
+                                                                                                <script
+                                                                                                    type="text/javascript">
+                                                                                                        function ShowHideDiv3() {
+                                                                                                            var chkYes3 = document.getElementById("chkYes3");
+                                                                                                            var dvPassport3 = document.getElementById("dvPassport3");
+                                                                                                            dvPassport3.style.display = chkYes3.checked ? "block" : "none";
+                                                                                                        }
+                                                                                                    </script>
+                                                                                                <span>Do you suffer from
+                                                                                                    high blood
+                                                                                                    pressure?</span>
+                                                                                                <label for="chkYes3">
+                                                                                                    <input type="radio"
+                                                                                                        id="chkYes3"
+                                                                                                        name="chkPassPort"
+                                                                                                        onclick="ShowHideDiv3()" />
+                                                                                                    Yes
+                                                                                                </label>
+                                                                                                <label for="chkNo3">
+                                                                                                    <input type="radio"
+                                                                                                        id="chkNo"
+                                                                                                        name="chkPassPort"
+                                                                                                        onclick="ShowHideDiv3()" />
+                                                                                                    No
+                                                                                                </label>
+
+                                                                                                <div id="dvPassport3"
+                                                                                                    style="display: none;padding: 25px;"
+                                                                                                    class="box-style1">
+                                                                                                    Please provide
+                                                                                                    details of when you
+                                                                                                    were diagnosed and
+                                                                                                    what treatment you
+                                                                                                    are on.
+                                                                                                    <input type="text"
+                                                                                                        id="txtPassportNumber"
+                                                                                                        style="height: 50px;width: 30%;" />
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <script
+                                                                                                        type="text/javascript">
+                                                                                                            function ShowHideDiv3() {
+                                                                                                                var chkYes3 = document.getElementById("chkYes3");
+                                                                                                                var dvPassport3 = document.getElementById("dvPassport3");
+                                                                                                                dvPassport3.style.display = chkYes3.checked ? "block" : "none";
+                                                                                                            }
+                                                                                                        </script>
+                                                                                                    <span>Do you suffer
+                                                                                                        from high blood
+                                                                                                        pressure?</span>
+                                                                                                    <label
+                                                                                                        for="chkYes3">
+                                                                                                        <input
+                                                                                                            type="radio"
+                                                                                                            id="chkYes3"
+                                                                                                            name="chkPassPort"
+                                                                                                            onclick="ShowHideDiv3()" />
+                                                                                                        Yes
+                                                                                                    </label>
+                                                                                                    <label for="chkNo3">
+                                                                                                        <input
+                                                                                                            type="radio"
+                                                                                                            id="chkNo"
+                                                                                                            name="chkPassPort"
+                                                                                                            onclick="ShowHideDiv3()" />
+                                                                                                        No
+                                                                                                    </label>
+
+                                                                                                    <div id="dvPassport3"
+                                                                                                        style="display: none;padding: 25px;"
+                                                                                                        class="box-style1">
+                                                                                                        Please provide
+                                                                                                        details of when
+                                                                                                        you were
+                                                                                                        diagnosed and
+                                                                                                        what treatment
+                                                                                                        you are on.
+                                                                                                        <input
+                                                                                                            type="text"
+                                                                                                            id="txtPassportNumber"
+                                                                                                            style="height: 50px;width: 30%;" />
+                                                                                                    </div>
+                                                                                                    <div>
+                                                                                                        <script
+                                                                                                            type="text/javascript">
+                                                                                                                function ShowHideDiv3() {
+                                                                                                                    var chkYes3 = document.getElementById("chkYes3");
+                                                                                                                    var dvPassport3 = document.getElementById("dvPassport3");
+                                                                                                                    dvPassport3.style.display = chkYes3.checked ? "block" : "none";
+                                                                                                                }
+                                                                                                            </script>
+                                                                                                        <span>Do you
+                                                                                                            suffer from
+                                                                                                            high blood
+                                                                                                            pressure?</span>
+                                                                                                        <label
+                                                                                                            for="chkYes3">
+                                                                                                            <input
+                                                                                                                type="radio"
+                                                                                                                id="chkYes3"
+                                                                                                                name="chkPassPort"
+                                                                                                                onclick="ShowHideDiv3()" />
+                                                                                                            Yes
+                                                                                                        </label>
+                                                                                                        <label
+                                                                                                            for="chkNo3">
+                                                                                                            <input
+                                                                                                                type="radio"
+                                                                                                                id="chkNo"
+                                                                                                                name="chkPassPort"
+                                                                                                                onclick="ShowHideDiv3()" />
+                                                                                                            No
+                                                                                                        </label>
+
+                                                                                                        <div id="dvPassport3"
+                                                                                                            style="display: none;padding: 25px;"
+                                                                                                            class="box-style1">
+                                                                                                            Please
+                                                                                                            provide
+                                                                                                            details of
+                                                                                                            when you
+                                                                                                            were
+                                                                                                            diagnosed
+                                                                                                            and what
+                                                                                                            treatment
+                                                                                                            you are on.
+                                                                                                            <input
+                                                                                                                type="text"
+                                                                                                                id="txtPassportNumber"
+                                                                                                                style="height: 50px;width: 30%;" />
+                                                                                                        </div>
+                                                                                                        <div>
+                                                                                                            <script
+                                                                                                                type="text/javascript">
+                                                                                                                    function ShowHideDiv3() {
+                                                                                                                        var chkYes3 = document.getElementById("chkYes3");
+                                                                                                                        var dvPassport3 = document.getElementById("dvPassport3");
+                                                                                                                        dvPassport3.style.display = chkYes3.checked ? "block" : "none";
+                                                                                                                    }
+                                                                                                                </script>
+                                                                                                            <span>Do you
+                                                                                                                suffer
+                                                                                                                from
+                                                                                                                high
+                                                                                                                blood
+                                                                                                                pressure?</span>
+                                                                                                            <label
+                                                                                                                for="chkYes3">
+                                                                                                                <input
+                                                                                                                    type="radio"
+                                                                                                                    id="chkYes3"
+                                                                                                                    name="chkPassPort"
+                                                                                                                    onclick="ShowHideDiv3()" />
+                                                                                                                Yes
+                                                                                                            </label>
+                                                                                                            <label
+                                                                                                                for="chkNo3">
+                                                                                                                <input
+                                                                                                                    type="radio"
+                                                                                                                    id="chkNo"
+                                                                                                                    name="chkPassPort"
+                                                                                                                    onclick="ShowHideDiv3()" />
+                                                                                                                No
+                                                                                                            </label>
+
+                                                                                                            <div id="dvPassport3"
+                                                                                                                style="display: none;padding: 25px;"
+                                                                                                                class="box-style1">
+                                                                                                                Please
+                                                                                                                provide
+                                                                                                                details
+                                                                                                                of when
+                                                                                                                you were
+                                                                                                                diagnosed
+                                                                                                                and what
+                                                                                                                treatment
+                                                                                                                you are
+                                                                                                                on.
+                                                                                                                <input
+                                                                                                                    type="text"
+                                                                                                                    id="txtPassportNumber"
+                                                                                                                    style="height: 50px;width: 30%;" />
+                                                                                                            </div>
+                                                                                                            <div>
+                                                                                                                <script
+                                                                                                                    type="text/javascript">
+                                                                                                                        function ShowHideDiv3() {
+                                                                                                                            var chkYes3 = document.getElementById("chkYes3");
+                                                                                                                            var dvPassport3 = document.getElementById("dvPassport3");
+                                                                                                                            dvPassport3.style.display = chkYes3.checked ? "block" : "none";
+                                                                                                                        }
+                                                                                                                    </script>
+                                                                                                                <span>Do
+                                                                                                                    you
+                                                                                                                    suffer
+                                                                                                                    from
+                                                                                                                    high
+                                                                                                                    blood
+                                                                                                                    pressure?</span>
+                                                                                                                <label
+                                                                                                                    for="chkYes3">
+                                                                                                                    <input
+                                                                                                                        type="radio"
+                                                                                                                        id="chkYes3"
+                                                                                                                        name="chkPassPort"
+                                                                                                                        onclick="ShowHideDiv3()" />
+                                                                                                                    Yes
+                                                                                                                </label>
+                                                                                                                <label
+                                                                                                                    for="chkNo3">
+                                                                                                                    <input
+                                                                                                                        type="radio"
+                                                                                                                        id="chkNo"
+                                                                                                                        name="chkPassPort"
+                                                                                                                        onclick="ShowHideDiv3()" />
+                                                                                                                    No
+                                                                                                                </label>
+
+                                                                                                                <div id="dvPassport3"
+                                                                                                                    style="display: none;padding: 25px;"
+                                                                                                                    class="box-style1">
+                                                                                                                    Please
+                                                                                                                    provide
+                                                                                                                    details
+                                                                                                                    of
+                                                                                                                    when
+                                                                                                                    you
+                                                                                                                    were
+                                                                                                                    diagnosed
+                                                                                                                    and
+                                                                                                                    what
+                                                                                                                    treatment
+                                                                                                                    you
+                                                                                                                    are
+                                                                                                                    on.
+                                                                                                                    <input
+                                                                                                                        type="text"
+                                                                                                                        id="txtPassportNumber"
+                                                                                                                        style="height: 50px;width: 30%;" />
+                                                                                                                </div>
+                                                                                                                <div>
+                                                                                                                    <script
+                                                                                                                        type="text/javascript">
+                                                                                                                            function ShowHideDiv3() {
+                                                                                                                                var chkYes3 = document.getElementById("chkYes3");
+                                                                                                                                var dvPassport3 = document.getElementById("dvPassport3");
+                                                                                                                                dvPassport3.style.display = chkYes3.checked ? "block" : "none";
+                                                                                                                            }
+                                                                                                                        </script>
+                                                                                                                    <span>Do
+                                                                                                                        you
+                                                                                                                        suffer
+                                                                                                                        from
+                                                                                                                        high
+                                                                                                                        blood
+                                                                                                                        pressure?</span>
+                                                                                                                    <label
+                                                                                                                        for="chkYes3">
+                                                                                                                        <input
+                                                                                                                            type="radio"
+                                                                                                                            id="chkYes3"
+                                                                                                                            name="chkPassPort"
+                                                                                                                            onclick="ShowHideDiv3()" />
+                                                                                                                        Yes
+                                                                                                                    </label>
+                                                                                                                    <label
+                                                                                                                        for="chkNo3">
+                                                                                                                        <input
+                                                                                                                            type="radio"
+                                                                                                                            id="chkNo"
+                                                                                                                            name="chkPassPort"
+                                                                                                                            onclick="ShowHideDiv3()" />
+                                                                                                                        No
+                                                                                                                    </label>
+
+                                                                                                                    <div id="dvPassport3"
+                                                                                                                        style="display: none;padding: 25px;"
+                                                                                                                        class="box-style1">
+                                                                                                                        Please
+                                                                                                                        provide
+                                                                                                                        details
+                                                                                                                        of
+                                                                                                                        when
+                                                                                                                        you
+                                                                                                                        were
+                                                                                                                        diagnosed
+                                                                                                                        and
+                                                                                                                        what
+                                                                                                                        treatment
+                                                                                                                        you
+                                                                                                                        are
+                                                                                                                        on.
+                                                                                                                        <input
+                                                                                                                            type="text"
+                                                                                                                            id="txtPassportNumber"
+                                                                                                                            style="height: 50px;width: 30%;" />
+                                                                                                                    </div>
+
+
+
+
+
+                                                                                                                </div>

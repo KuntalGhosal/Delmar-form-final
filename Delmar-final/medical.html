@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./test.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+        }
+
+        .modal {
+            background-color: rgba(0, 0, 0, .7);
+            /* background-color: white; */
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .5s;
+        }
+
+        .modal__content {
+            width: 100%;
+            height: 100%;
+            /* background-color: rgba(0, 0, 0, .7);      */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 2em;
+            border-radius: 1em;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .5s;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #modal:target {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #modal:target .modal__content {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal__close {
+            /* color: red;
+  font-size: ; */
+            position: absolute;
+            top: .5em;
+            right: 9em;
+        }
+
+        .modal__heading {
+            color: white;
+            margin-bottom: 1em;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .modal__paragraph {
+            line-height: 1.5em;
+            color: white;
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-top: 2px;
+            text-align: justify;
+            padding-bottom: 10px;
+        }
+
+        .modal-open {
+            display: inline-block;
+            /* color: dodgerblue; */
+            margin: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal" id="modal">
+        <div class="modal_content">
+            <div class="text-decoretion">
+                <a href="#" class="modal_close" style="font-size: 50px;color: red;">&times;</a>
+                <h2 class="modal__heading">AGREEMENT BETWEEN USER AND DELMAR PRIVATE HOSPITAL</h2>
+                <p class="modal__paragraph">The Delmar Private Hospital Web Site is comprised of various Web pages
+                    operated by
+                    Delmar Private
+                    Hospital.
+
+                    The Delmar Private Hospital Web Site is offered to you conditioned on your acceptance without
+                    modification of the terms, conditions, and notices contained herein. Your use of the Delmar Private
+                    Hospital Web Site constitutes your agreement to all such terms, conditions, and notices.</p>
+
+                <h2 class="modal__heading">MODIFICATION OF THESE TERMS OF USE</h2>
+                <p class="modal__paragraph">Delmar Private Hospital reserves the right to change the terms, conditions,
+                    and
+                    notices under which
+                    the Delmar Private Hospital Web Site is offered, including but not limited to the charges associated
+                    with the use of the Delmar Private Hospital Web Site.</p>
+
+                <h2 class="modal__heading">LINKS TO THIRD PARTY SITES</h2>
+                <p class="modal__paragraph">The Delmar Private Hospital Web Site may contain links to other Web Sites
+                    (“Linked
+                    Sites”). The
+                    Linked Sites are not under the control of Delmar Private Hospital and Delmar Private Hospital is not
+                    responsible for the contents of any Linked Site, including without limitation any link contained in
+                    a Linked Site, or any changes or updates to a Linked Site. Delmar Private Hospital is not
+                    responsible for webcasting or any other form of transmission received from any Linked Site. Delmar
+                    Private Hospital is providing these links to you only as a convenience, and the inclusion of any
+                    link does not imply endorsement by Delmar Private Hospital of the site or any association with its
+                    operators.</p>
+
+                <h2 class="modal__heading">NO UNLAWFUL OR PROHIBITED USE</h2>
+                <p class="modal__paragraph">As a condition of your use of the Delmar Private Hospital Web Site, you
+                    warrant to
+                    Delmar Private
+                    Hospital that you will not use the Delmar Private Hospital Web Site for any purpose that is unlawful
+                    or prohibited by these terms, conditions, and notices. You may not use the Delmar Private Hospital
+                    Web Site in any manner which could damage, disable, overburden, or impair the Delmar Private
+                    Hospital Web Site or interfere with any other party’s use and enjoyment of the Delmar Private
+                    Hospital Web Site. You may not obtain or attempt to obtain any materials or information through any
+                    means not intentionally made available or provided for through the Delmar Private Hospital Web Site.
+                </p>
+
+                <h2 class="modal__heading">USE OF COMMUNICATION SERVICES</h2>
+                <p class="modal__paragraph">The Delmar Private Hospital Web Site may contain bulletin board services,
+                    chat
+                    areas, news groups,
+                    forums, communities, personal web pages, calendars, and/or other message or communication facilities
+                    designed to enable you to communicate with the public at large or with a group (collectively,
+                    “Communication Services”), you agree to use the Communication Services only to post, send and
+                    receive messages and material that are proper and related to the particular Communication Service.
+                    By way of example, and not as a limitation, you agree that when using a Communication Service, you
+                    will not:</p>
+
+                <ul class="modal__paragraph">
+                    <li>Defame, abuse, harass, stalk, threaten or otherwise violate the legal rights (such as rights of
+                        privacy and publicity) of others.</li>
+                    <li>Publish, post, upload, distribute or disseminate any inappropriate, profane, defamatory,
+                        infringing, obscene, indecent or unlawful topic, name, material or information.</li>
+
+                    <li>Upload files that contain software or other material protected by intellectual property laws (or
+                        by rights of privacy of publicity) unless you own or control the rights thereto or have received
+                        all necessary consents.</li>
+                    <li>Upload files that contain viruses, corrupted files, or any other similar software or programs
+                        that may damage the operation of another’s computer.</li>
+
+                    <li>Advertise or offer to sell or buy any goods or services for any business purpose, unless such
+                        Communication Service specifically allows such messages.</li>
+
+                    <li>Conduct or forward surveys, contests, pyramid schemes or chain letters.</li>
+                    <li>Download any file posted by another user of a Communication Service that you know, or reasonably
+                        should know, cannot be legally distributed in such manner.</li>
+
+                    <li>Falsify or delete any author attributions, legal or other proper notices or proprietary
+                        designations or labels of the origin or source of software or other material contained in a file
+                        that is uploaded.</li>
+
+                    <li>Restrict or inhibit any other user from using and enjoying the Communication Services.</li>
+
+                    <li>Violate any code of conduct or other guidelines which may be applicable for any particular
+                        Communication Service.</li>
+
+                    <li>Harvest or otherwise collect information about others, including e-mail addresses, without their
+                        consent.</li>
+
+                    <li>Violate any applicable laws or regulations.</li>
+                </ul>
+
+                <p class="modal__paragraph">Delmar Private Hospital has no obligation to monitor the Communication
+                    Services.
+                    However, Delmar
+                    Private Hospital reserves the right to review materials posted to a Communication Service and to
+                    remove any materials in its sole discretion. Delmar Private Hospital reserves the right to terminate
+                    your access to any or all of the Communication Services at any time without notice for any reason
+                    whatsoever.
+
+                    Delmar Private Hospital reserves the right at all times to disclose any information as necessary to
+                    satisfy any applicable law, regulation, legal process or governmental request, or to edit, refuse to
+                    post or to remove any information or materials, in whole or in part, in Delmar Private Hospital’s
+                    sole discretion.
+
+                    Always use caution when giving out any personally identifying information about yourself or your
+                    children in any Communication Service. Delmar Private Hospital does not control or endorse the
+                    content, messages or information found in any Communication Service and, therefore, Delmar Private
+                    Hospital specifically disclaims any liability with regard to the Communication Services and any
+                    actions resulting from your participation in any Communication Service. Managers and hosts are not
+                    authorised Delmar Private Hospital spokespersons, and their views do not necessarily reflect those
+                    of Delmar Private Hospital.
+
+                    Materials uploaded to a Communication Service may be subject to posted limitations on usage,
+                    reproduction and/or dissemination. You are responsible for adhering to such limitations if you
+                    download the materials.</p>
+
+                <h2 class="modal__heading">MATERIALS PROVIDED TO DELMAR PRIVATE HOSPITAL OR POSTED AT ANY DELMAR PRIVATE
+                    HOSPITAL WEB SITE</h2>
+                <p class="modal__paragraph">Delmar Private Hospital does not claim ownership of the materials you
+                    provide to
+                    Delmar Private
+                    Hospital (including feedback and suggestions) or post, upload, input or submit to any Delmar Private
+                    Hospital Web Site or its associated services (collectively “Submissions”). However, by posting,
+                    uploading, inputting, providing or submitting your Submission you are granting Delmar Private
+                    Hospital, its affiliated companies and necessary sublicensees permission to use your Submission in
+                    connection with the operation of their Internet businesses including, without limitation, the rights
+                    to: copy, distribute, transmit, publicly display, publicly perform, reproduce, edit, translate and
+                    reformat your Submission; and to publish your name in connection with your Submission.
+
+                    No compensation will be paid with respect to the use of your Submission, as provided herein. Delmar
+                    Private Hospital is under no obligation to post or use any Submission you may provide and may remove
+                    any Submission at any time in Delmar Private Hospital’s sole discretion.
+
+                    By posting, uploading, inputting, providing or submitting your Submission you warrant and represent
+                    that you own or otherwise control all of the rights to your Submission as described in this section
+                    including, without limitation, all the rights necessary for you to provide, post, upload, input or
+                    submit the Submissions.</p>
+
+                <h2 class="modal__heading">LIABILITY DISCLAIMER</h2>
+                <p class="modal__paragraph">THE INFORMATION, SOFTWARE, PRODUCTS, AND SERVICES INCLUDED IN OR AVAILABLE
+                    THROUGH
+                    THE DELMAR PRIVATE
+                    HOSPITAL WEB SITE MAY INCLUDE INACCURACIES OR TYPOGRAPHICAL ERRORS. CHANGES ARE PERIODICALLY ADDED
+                    TO THE INFORMATION HEREIN. DELMAR PRIVATE HOSPITAL AND/OR ITS SUPPLIERS MAY MAKE IMPROVEMENTS AND/OR
+                    CHANGES IN THE DELMAR PRIVATE HOSPITAL WEB SITE AT ANY TIME. ADVICE RECEIVED VIA THE DELMAR PRIVATE
+                    HOSPITAL WEB SITE SHOULD NOT BE RELIED UPON FOR PERSONAL, MEDICAL, LEGAL OR FINANCIAL DECISIONS AND
+                    YOU SHOULD CONSULT AN APPROPRIATE PROFESSIONAL FOR SPECIFIC ADVICE TAILORED TO YOUR SITUATION.
+
+                    DELMAR PRIVATE HOSPITAL AND/OR ITS SUPPLIERS MAKE NO REPRESENTATIONS ABOUT THE SUITABILITY,
+                    RELIABILITY, AVAILABILITY, TIMELINESS, AND ACCURACY OF THE INFORMATION, SOFTWARE, PRODUCTS, SERVICES
+                    AND RELATED GRAPHICS CONTAINED ON THE DELMAR PRIVATE HOSPITAL WEB SITE FOR ANY PURPOSE. TO THE
+                    MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ALL SUCH INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND
+                    RELATED GRAPHICS ARE PROVIDED “AS IS” WITHOUT WARRANTY OR CONDITION OF ANY KIND. DELMAR PRIVATE
+                    HOSPITAL AND/OR ITS SUPPLIERS HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH REGARD TO THIS
+                    INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND RELATED GRAPHICS, INCLUDING ALL IMPLIED WARRANTIES OR
+                    CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT.
+
+                    TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL DELMAR PRIVATE HOSPITAL AND/OR
+                    ITS SUPPLIERS BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL
+                    DAMAGES OR ANY DAMAGES WHATSOEVER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF USE, DATA OR
+                    PROFITS, ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE USE OR PERFORMANCE OF THE DELMAR PRIVATE
+                    HOSPITAL WEB SITE, WITH THE DELAY OR INABILITY TO USE THE DELMAR PRIVATE HOSPITAL WEB SITE OR
+                    RELATED SERVICES, THE PROVISION OF OR FAILURE TO PROVIDE SERVICES, OR FOR ANY INFORMATION, SOFTWARE,
+                    PRODUCTS, SERVICES AND RELATED GRAPHICS OBTAINED THROUGH THE DELMAR PRIVATE HOSPITAL WEB SITE, OR
+                    OTHERWISE ARISING OUT OF THE USE OF THE DELMAR PRIVATE HOSPITAL WEB SITE, WHETHER BASED ON CONTRACT,
+                    TORT, NEGLIGENCE, STRICT LIABILITY OR OTHERWISE, EVEN IF DELMAR PRIVATE HOSPITAL OR ANY OF ITS
+                    SUPPLIERS HAS BEEN ADVISED OF THE POSSIBILITY OF DAMAGES. BECAUSE SOME STATES/JURISDICTIONS DO NOT
+                    ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE
+                    LIMITATION MAY NOT APPLY TO YOU. IF YOU ARE DISSATISFIED WITH ANY PORTION OF THE DELMAR PRIVATE
+                    HOSPITAL WEB SITE, OR WITH ANY OF THESE TERMS OF USE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO
+                    DISCONTINUE USING THE DELMAR PRIVATE HOSPITAL WEB SITE.</p>
+
+                <h2 class="modal__heading">TERMINATION/ACCESS RESTRICTION</h2>
+                <p class="modal__paragraph">Delmar Private Hospital reserves the right, in its sole discretion, to
+                    terminate
+                    your access to the
+                    Delmar Private Hospital Web Site and the related services or any portion thereof at any time,
+                    without notice. GENERAL To the maximum extent permitted by law, this agreement is governed by the
+                    laws of Australia. You agree that no joint venture, partnership, employment, or agency relationship
+                    exists between you and Delmar Private Hospital as a result of this agreement or use of the Delmar
+                    Private Hospital Web Site. Delmar Private Hospital’s performance of this agreement is subject to
+                    existing laws and legal process, and nothing contained in this agreement is in derogation of Delmar
+                    Private Hospital’s right to comply with governmental, court and law enforcement requests or
+                    requirements relating to your use of the Delmar Private Hospital Web Site or information provided to
+                    or gathered by Delmar Private Hospital with respect to such use. If any part of this agreement is
+                    determined to be invalid or unenforceable pursuant to applicable law including, but not limited to,
+                    the warranty disclaimers and liability limitations set forth above, then the invalid or
+                    unenforceable provision will be deemed superseded by a valid, enforceable provision that most
+                    closely matches the intent of the original provision and the remainder of the agreement shall
+                    continue in effect. Unless otherwise specified herein, this agreement constitutes the entire
+                    agreement between the user and Delmar Private Hospital with respect to the Delmar Private Hospital
+                    Web Site and it supersedes all prior or contemporaneous communications and proposals, whether
+                    electronic, oral or written, between the user and Delmar Private Hospital with respect to the Delmar
+                    Private Hospital Web Site. A printed version of this agreement and of any notice given in electronic
+                    form shall be admissible in judicial or administrative proceedings based upon or relating to this
+                    agreement to the same extent an d subject to the same conditions as other business documents and
+                    records originally generated and maintained in printed form. It is the express wish to the parties
+                    that this agreement and all related documents be drawn up in English.</p>
+
+                <h2 class="modal__heading">COPYRIGHT AND TRADEMARK NOTICES:</h2>
+                <p class="modal__paragraph">All contents of the Delmar Private Hospital Web Site are: Copyright 2017 by
+                    Macquarie Health
+                    Corporation and/or its suppliers. All rights are reserved.</p>
+
+                <h2 class="modal__heading">TRADEMARKS</h2>
+                <p class="modal__paragraph">The names of actual companies and products mentioned herein may be the
+                    trademarks of
+                    their respective
+                    owners.
+
+                    The example companies, organisations, products, people and events depicted herein are fictitious. No
+                    association with any real company, organization, product, person, or event is intended or should be
+                    inferred.
+
+                    Any rights not expressly granted herein are reserved.</p>
+            </div>
+        </div>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <img class="logo-img" src="assets/logo.png" />
+        <a href="#preAdmission" class="pre-addmission">Pre-Admission Form</a>
+
+        <a href="#modal" class="modal-open">Terms of Use</a>
+        <a href="https://www.mhsdelmar.com.au/contact-us/" class="right-nav">Contact</a>
+    </div>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    <section>
+
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                    <h3 style="margin-bottom: 20px;"> Your admission date is 25 Feburary 2021 with Dr. Anthony Fauci for “Bilateral Cataract
+                        Extraction/ioa
+                        D/o”</h3>
+                    <div class="main-btn" style="margin-bottom: 20px;">
+                        <div class="personal-btn">
+                            <a class="navlink-btn" href="./index.html">
+                                Personal Information
+                            </a>
+                        </div>
+                        <div class="patient-btn ">
+                            <a class="navlink-btn" href="./index1.html">
+                                Patient Benefits
+                            </a>
+                        </div>
+                        <div class="relation-btn">
+                            <a class="navlink-btn" href="./relation.html">
+                                Patient Relations
+                            </a>
+                        </div>
+                        <div class="medical-btn active">
+                            <a class="navlink-btn" href="#">
+                                Medical Information
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <h2>Medical</h2>
+                        <hr />
+
+                        <form action="/action_page.php" class="form-section">
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <!-- <label for="chkYes" class="">
+                                <input type="radio" id="chkYes" name="chkPassPort"
+                                    onclick="ShowHideDiv('chkYes','dvPassport1')" />
+                                Yes
+                            </label>
+                            <label for="chkNo">
+                                <input type="radio" id="chkNo" name="chkPassPort"
+                                    onclick="ShowHideDiv('chkNo','dvPassport1')" />
+                                No
+                            </label> -->
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport1', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Are you, or could you be
+                                        pregnant?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport1" class="box-style1">
+                                    <label for="input-area">Please provide details.</label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport2', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Are you allergic to anything?</span>
+                                </div>
+
+                                <div id="dvPassport2" class="box-style1">
+                                    <label for="input-area">Please provide details.</label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport3', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Are you diabetic?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport3" class="box-style1">
+                                    <label for="input-area">Please state the type of diabetes, and whether it is treated
+                                        with diet, tablets or insulin.</label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport4', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you suffer from high blood pressure?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport4" class="box-style1">
+                                    <label for="input-area">Please provide details of when you were diagnosed and what
+                                        treatment you are on.</label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport5', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you suffer from heart problems or chest
+                                        pain/angina?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport5" class="box-style1">
+                                    <label for="input-area">Please provide details.</label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport6', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;"> Do you have a pacemaker?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport6" class="box-style1">
+                                    <label for="input-area">Please provide the make, model and the date when last it was
+                                        checked.</label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport7', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;"> Do you suffer from arthritis?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport7" class="box-style1">
+                                    <label for="input-area">Please provide details.</label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport8', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do have asthma, emphysema, bronchitis or hay fever?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport8" class="box-style1">
+                                    <label for="input-area">Please provide details.</label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport9', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you recently had a cold or flu?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport9" class="box-style1">
+                                    <label for="input-area">Please provide details.</label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport10', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you suffer from sleep apnoea?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport10" class="box-style1">
+                                    <label for="input-area">Please provide details.</label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport11', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you suffer from sleep apnoea?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport11" class="box-style1">
+                                    <label for="input-area">Please provide details.</label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport12', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you use a CPAP machine at home?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport12" class="box-style1">
+                                    <label for="input-area">Please provide details and bring your CPAP machine to
+                                        hospital with you.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport13', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any liver disease?
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport13" class="box-style1">
+                                    <label for="input-area">Please provide details and specify any hepatitis as A, B or
+                                        C.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport14', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any kidney disease?
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport14" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport15', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any stomach/bowel diseases such as
+                                        hiatus hernia, ulcers, divertilulosis or inflammatory bowel disease?
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport15" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport16', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any thyroid problems?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport16" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport17', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you suffer from seizures?
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport17" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport18', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you suffer from migraine?
+
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport18" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport19', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any psychiatric problems such as
+                                        anxiety or depression??
+
+
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport19" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport20', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any other health problems?
+
+                                    </span>
+
+                                </div>
+
+                                <div id="dvPassport20" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport21', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you had any recent infections?
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport21" class="box-style1">
+                                    <label for="input-area">Please provide details of the infections.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport22', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">
+                                        Have you ever had a stroke?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport22" class="box-style1">
+                                    <label for="input-area">Please provide the date of the strokes, and any residual
+                                        problems you have from them.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport23', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you ever had cancer?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport23" class="box-style1">
+                                    <label for="input-area">Please provide all diagnosis dates and sites of the cancer.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport122', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you ever had rheumatic fever?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport122" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport24', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you recently taken blood thinning / arthritis
+                                        / aspirin-based medication or Warfarin?
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport24" class="box-style1">
+                                    <label for="input-area">Which of these medications have you taken, when did you last
+                                        take them, and were you instructed to stop them?
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport25', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you taken any steroids or cortisone
+                                        tablets/injections in the last 6 months?
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport25" class="box-style1">
+                                    <label for="input-area">Which of these medications have you taken, and when last did
+                                        you take them?
+
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport26', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Are you taking any other prescription or
+                                        non-prescription medication?
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport26" class="box-style1">
+                                    <label for="input-area">Please provide details for them, and bring current
+                                        medications to the hospital on admission, in the original packaging. Please also
+                                        obtain advice from your doctor on taking medications on the morning of your
+                                        operation.
+
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+                            <h2>Surgical</h2>
+                            <hr />
+
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport27', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any artificial joints or limbs?
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport27" class="box-style1">
+                                    <label for="input-area">Please provide details.
+
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport28', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any metal plates or screws in your
+                                        body?
+
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport28" class="box-style1">
+                                    <label for="input-area">Please provide details.
+
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport29', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you ever had heart surgery or a stent
+                                        inserted?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport29" class="box-style1">
+                                    <label for="input-area">Please provide details of the procedure, year performed, and
+                                        hospital where it was performed.
+
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport30', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you had any other previous operations?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport30" class="box-style1">
+                                    <label for="input-area">Please list the years and procedures of any operations.
+
+
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport31', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you, or anyone in your immediate family, had a
+                                        reaction to an anaesthetic?
+
+
+
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport31" class="box-style1">
+                                    <label for="input-area">Please provide details of any reaction.
+
+
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport32', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you ever had a blood transfusion?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport32" class="box-style1">
+                                    <label for="input-area">Please provide details of any reaction.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport33', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have a tendency to bruise or bleed easily?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport33" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport34', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you ever had clots in your legs or lungs?
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport34" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport35', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you had a dura mater graft between 1972 and
+                                        1989?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport35" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport36', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have a family history of two or more
+                                        relatives with Creutzfeldt-Jacob Disease, or other progressive neurological
+                                        disorder?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport36" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport37', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you received human pituitary hormones (growth
+                                        hormone, gonadotropins) prior to 1985?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport37" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport38', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you suffered from a recent progressive
+                                        dementia, the cause of which has not been diagnosed?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport38" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <h2>Social</h2>
+                            <hr />
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport39', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any visual problems?
+
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport39" class="box-style1">
+                                    <label for="input-area">Please provide details of your impairment and whether you
+                                        use glasses or contact lenses.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport40', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any hearing problems?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport40" class="box-style1">
+                                    <label for="input-area">Please provide details of your impairment, and whether you
+                                        use a hearing aid.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                            </textarea>
+                                </div>
+                            </div>
+
+                            <!-- <div id="dvPassport37" class="box-style1">
+                                <label for="input-area">Please provide details of your impairment and whether you
+                                    use glasses or contact lenses.
+                                </label>
+                                <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                        </textarea>
+                            </div> -->
+
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport41', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any mobility problems?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport41" class="box-style1">
+                                    <label for="input-area">Please provide details of your impairment, and whether you
+                                        use
+                                        mobility aids..
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                        </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport42', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Have you a fear of falling, or have fallen in the
+                                        past 12
+                                        months?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport42" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                        </textarea>
+                                </div>
+                            </div>
+
+                            <div id="form-container">
+                                <div id="form-checkbox">
+
+                                    <label class="switch">
+                                        <input type="checkbox" id="togBtn" value="true"
+                                            onclick="ShowHideDiv('chkNo','dvPassport43', this)">
+                                        <div class="slider round">
+                                            <!--ADDED HTML -->
+                                            <span class="on">YES</span>
+                                            <span class="off">NO</span>
+                                            <!--END-->
+                                        </div>
+                                    </label>
+                                    <span style="margin-left: 20px;">Do you have any body piercings?
+                                    </span>
+                                </div>
+
+                                <div id="dvPassport43" class="box-style1">
+                                    <label for="input-area">Please provide details.
+                                    </label>
+                                    <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                        </textarea>
+                                </div>
+                            </div>
+
+
+
+                    </div>
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport44', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;">Do you wear dentures?
+                            </span>
+                        </div>
+
+                        <div id="dvPassport44" class="box-style1">
+                            <label for="input-area">Please provide details.
+
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                    </textarea>
+                        </div>
+                    </div>
+
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport45', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;">Do you smoke currently?
+                            </span>
+                        </div>
+
+                        <div id="dvPassport45" class="box-style1">
+                            <label for="input-area">How much do you smoke per day?
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                    </textarea>
+                        </div>
+                    </div>
+
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport46', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;">Have you smoked in the past?
+
+                            </span>
+                        </div>
+
+                        <div id="dvPassport46" class="box-style1">
+                            <label for="input-area">How much did you smoke and when did you stop?
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                    </textarea>
+                        </div>
+                    </div>
+
+
+                    <!-- <div id="dvPassport43" class="box-style1">
+            <label for="input-area">How much do you smoke per day?
+            </label>
+            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                </textarea>
+        </div> -->
+
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport47', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;">Do you drink alcohol?
+                            </span>
+                        </div>
+
+                        <div id="dvPassport47" class="box-style1">
+                            <label for="input-area">How much and how frequently do you drink?
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                                </textarea>
+                        </div>
+                    </div>
+
+                    <!-- <div id="dvPassport47" class="box-style1">
+            <label for="input-area">How much do you smoke per day?
+            </label>
+            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                            </textarea>
+        </div> -->
+
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport48', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;">Do you use recreational drugs?
+                            </span>
+                        </div>
+
+                        <div id="dvPassport48" class="box-style1">
+                            <label for="input-area">Which drugs do you use and how often?
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport49', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;">Do you require a special diet?
+
+                            </span>
+                        </div>
+
+                        <div id="dvPassport49" class="box-style1">
+                            <label for="input-area">Please provide details.
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport50', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;">Do you live alone?
+
+                            </span>
+                        </div>
+
+                        <div id="dvPassport50" class="box-style1">
+                            <label for="input-area">Please provide details.
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport51', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;">Are you solely responsible for the care of another person
+                                at home?
+
+                            </span>
+                        </div>
+
+                        <div id="dvPassport51" class="box-style1">
+                            <label for="input-area">Please provide details.
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport52', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;">Do you currently receive community support services?
+
+                            </span>
+                        </div>
+
+                        <div id="dvPassport52" class="box-style1">
+                            <label for="input-area">Please provide details.
+
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport53', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;"> Do you require assistance with any aspect of day-to-day
+                                living?
+
+                            </span>
+                        </div>
+
+                        <div id="dvPassport53" class="box-style1">
+                            <label for="input-area">Please provide details.
+
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport54', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;"> Do you have more than one external or internal flight of
+                                stairs in
+                                your home?
+                            </span>
+                        </div>
+
+                        <div id="dvPassport54" class="box-style1">
+                            <label for="input-area">Please provide details.
+
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div id="form-container">
+                        <div id="form-checkbox">
+
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" value="true"
+                                    onclick="ShowHideDiv('chkNo','dvPassport55', this)">
+                                <div class="slider round">
+                                    <!--ADDED HTML -->
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                    <!--END-->
+                                </div>
+                            </label>
+                            <span style="margin-left: 20px;"> Do you have multiple health problems?
+                            </span>
+                        </div>
+
+                        <div id="dvPassport55" class="box-style1">
+                            <label for="input-area">Please provide details.
+                            </label>
+                            <textarea id="input-area" name="input-area" rows="4" cols="50">
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <button id="myButton" class="next-btn" style=" background: darkorange;"
+                onclick="location.href = './index.html';">Submit</button>
+        </div>
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <script>
+        var checkboxes = document.getElementsByTagName('input')
+        console.log('checkbox - ', checkboxes.length)
+        for (let i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].checked = true
+        }
+    </script>
+
+    <script>
+        function ShowHideDiv(checks, passport, value) {
+            var chkYes = document.getElementById(checks);
+            var dvPassport = document.getElementById(passport);
+            dvPassport.style.display = "block"
+            if (value.checked === false) {
+                dvPassport.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
